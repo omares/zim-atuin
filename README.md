@@ -1,19 +1,22 @@
-custom
+zim-atuin
 ======
 
-Add any custom aliases/settings to the `init.zsh` file.
+[zim-module](https://github.com/zimfw/zimfw) for [atuin](https://github.com/ellie/atuin).
 
-Any functions should go in the `functions` subdirectory, where the name of the
-file is the name of the function.
+## Features
 
-For example, this function from your `.zshrc`:
-```zsh
-foo() {
-  print 'bar'
-}
-```
+- Pre-compilation of the atuin initialization script to eliminate recurring eval calls.
 
-becomes a file named `foo` in the `functions` subdirectory containing:
-```zsh
-print 'bar'
+## Prerequisites
+
+You need to have [atuin](https://github.com/ellie/atuin) installed.
+
+## Install
+
+Add the following to `~/.zimrc`
+
+```sh
+# some configuration above
+zmodule omares/zim-atuin
+# some configuration below
 ```
